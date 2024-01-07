@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Criando a Classe Pessoa
+        class Pessoa {
+            constructor(nome, idade, sexo, dataDeNascimento) {
+                this.nome = nome;
+                this.idade = idade;
+                this.sexo = sexo;
+                this.dataDeNascimento = dataDeNascimento;                
+            }
+
+            apresentar() {
+                console.log(`Ola, meu nome é ${this.nome}, eu tenho ${this.idade} anos`);
+            }
+        }
+
+        //Criando um Objeto Pessoa
+        const pessoa1 = new Pessoa("Murilo", 23, "Masculino", "22/06/2000");
+        const pessoa2 = new Pessoa("Maiara", 29, "Feminino", "18/09/1994");
+        const pessoa3 = new Pessoa("Jose", 43, "Masculino", "19/05/1980");
+        
+
+
+        //Utilizando o Objeto Pessoa
+        pessoa1.apresentar();
+        console.log(pessoa1.dataDeNascimento);        
+        pessoa2.apresentar();
+        console.log(pessoa2.sexo);
+        pessoa3.apresentar();
+        console.log(this.dataDeNascimento);
+    </script>
+</body>
+
+</html>

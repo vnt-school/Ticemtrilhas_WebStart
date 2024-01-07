@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> Olá! </h1>
+    <p>Olá, Tudo bem?</p>
+
+    <script>
+        /*  var x = 5;
+         var y = 10;
+         let resultado = res(x, y);
+         console.log(resultado);
+ 
+         function res(a, b) {
+             return a*b;
+         } */
+
+        var x = 15;
+        var y = 10;
+        let resultado = res(x, y);
+        console.log(resultado);
+        function res(a, b) {
+            return a + b;
+        }
+
+        const array1 = [10, 20];
+        const array2 = [40, 50];
+        const resArray = [...array1, ...array2];
+        console.log(resArray);
+
+        document.querySelector("h1").innerText = "Olá, Mundo!"        
+        let h2 = document.createElement("h2");
+        h2.textContent = "Seja Bem Vindo!";        
+        document.body.appendChild(h2);
+        
+        document.querySelector("p").style.backgroundColor = "red";
+    </script>
+
+</body>
+
+</html>

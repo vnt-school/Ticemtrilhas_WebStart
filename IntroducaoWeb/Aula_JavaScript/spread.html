@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        const object1 = { name: 'João', age: 30 };
+        const object2 = { city: 'São Paulo', country: 'Brasil' };
+        const combinedObject = { ...object1, ...object2 };
+        console.log(combinedObject);
+
+        const array1 = [1, 2, 3];
+        const array2 = [4, 5, 6];
+        const combinedArray = [...array1, ...array2];
+        console.log(combinedArray);
+
+
+
+        const originalArray = [1, 2, 3];
+        const copiedArray = [...originalArray];
+        console.log(copiedArray)
+
+        const originalObject = { name: 'Maria', age: 25 };
+        const copiedObject = { ...originalObject };
+        console.log(copiedObject);    
+
+
+    </script>
+
+</body>
+</html>

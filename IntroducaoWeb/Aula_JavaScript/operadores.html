@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        //Operadores Aritméticos
+        const adicao = 1 + 1;
+        const subtracao = 1 - 1;
+        const multiplicacao = 2 * 3;
+        const divisao = 5 / 2;
+        console.log(adicao, subtracao, multiplicacao, divisao);
+
+        const modulo = 5 % 2;
+        const potencia = (5 ** 2);
+        console.log(modulo, potencia);
+
+        //Incremento
+        let A = 1;
+        console.log(A++);
+        let B = 1;
+        console.log(++B);
+
+        //Decremento
+        let C = 2;
+        console.log(C--);
+        let D = 2;
+        console.log(--D);
+
+        //concatenação
+        let cidade = "Rio" + " de " + "Janeiro";
+        console.log(cidade);
+
+        // Operadores de Atribuição
+        const atribuicao = 1;
+        /* atribuicao +=3  const não aceita atribuiçao */
+
+        let atribuicaoComOperador = 1; // 1
+        atribuicaoComOperador += 3; // 4
+        console.log(atribuicaoComOperador);
+        atribuicaoComOperador -= 1; // 3
+        console.log(atribuicaoComOperador);
+        atribuicaoComOperador *= 3; // 9
+        console.log(atribuicaoComOperador);
+        atribuicaoComOperador /= 2; // 4.5
+        console.log(atribuicaoComOperador);
+        atribuicaoComOperador %= 2; // 0.5        
+        console.log(atribuicaoComOperador);
+
+
+        // Operadores Relacionais
+        let comparacao;
+        comparacao = 42 == '42';
+        console.log(comparacao);
+        comparacao = 42 === '42';
+        console.log(comparacao);
+        comparacao = 'texto' != 'TEXTO';
+        console.log(comparacao);
+        comparacao = 42 !== '42';
+        console.log(comparacao);
+        comparacao = 42 > 7;
+        console.log(comparacao);
+        comparacao = 20 < 50;
+        console.log(comparacao);
+        comparacao = 10 >= 10;
+        console.log(comparacao);
+        comparacao = 10 <= 10;
+        console.log(comparacao);
+
+        // Operadores Lógicos
+        const logicoE = true && true; 
+        const logicoE2 = true && false; 
+        console.log(logicoE, logicoE2);
+
+        const logicoOu = true || true; 
+        const logicoOu2 = false || true; 
+        console.log(logicoOu, logicoOu2);
+
+        const logicoNao = !true; 
+        const logicoNao2 = !false; 
+        console.log(logicoNao, logicoNao2);
+
+    </script>
+
+</body>
+
+</html>

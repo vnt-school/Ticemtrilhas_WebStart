@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const numeros = [1, 2, 3];
+        for (let i = 0; i < 3; i++) {
+            console.log("O item " + i + " do array é " + numeros[i]);            
+            console.log(`O item ${i} do array é ${numeros[i]}`);
+        }
+
+
+        //O laço for...in é usado para iterar sobre as propriedades de um objeto. 
+        const pessoa = { nome: 'Joana', idade: '5' };
+        for (let key in pessoa) {
+            console.log(`${key} é ${pessoa[key]}`);
+        }
+
+
+        //O laço for...of é usado para iterar sobre elementos iteráveis,
+        // como strings, arrays e objetos iteráveis.
+        const num = [1, 2, 3];
+        for (let numero of num) {
+            console.log(numero);
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .destaque {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="titulo">Manipulando o DOM</h1>
+
+    <ul id="lista-cores">
+        <li>Vermelho</li>
+        <li>Verde</li>
+        <li>Azul</li>
+    </ul>
+
+    <button id="botao-destaque" onclick="destacar()">Aplicar destaque</button>    
+
+    <script>
+        //selecionando o id titulo e alterando o conteúdo de h1
+        const titulo = document.getElementById('titulo');
+        titulo.innerHTML = 'Manipulando o DOM <i>de verdade</i>';
+
+        //selecionando mais de um elemento por vez
+        const cores = document.querySelectorAll('#lista-cores li');
+        
+
+        //adicionando um novo item na lista
+        const novoItem = document.createElement('li');
+        novoItem.textContent = 'Amarelo';
+        cores[0].insertAdjacentElement('beforebegin', novoItem);
+
+        //removendo um item da lista
+        cores[0].remove();       
+
+        //destacando um cor ao clicar no botão
+        function destacar() {
+            cores[1].classList.add('destaque');
+        }       
+    </script>
+
+</body>
+
+</html>
