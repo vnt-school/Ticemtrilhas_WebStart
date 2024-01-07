@@ -1,0 +1,33 @@
+<meta charset="UTF-8">	
+<script>
+	alert("  MATRIZ  ");
+
+    var M = new Array(3); 
+
+    for (var i = 0; i < 3; i++) {
+        M[i] = [];
+        for (var j = 0; j < 4; j++) {            
+            M[i][j] = +prompt("Digite o valor M["+ i +"]" + "M[" + j + "]: ");           
+        }
+    }
+
+    document.write("Matriz Principal: <br>");
+    for(var i=0 ; i<3 ; i++){
+     for(var j=0; j<4 ; j++){
+      document.write(M[i][j] + " ");
+    }
+    document.write("<br>");      
+    }
+
+    document.write("<br>"); 
+    document.write("Matriz Modificada: <br>");
+    for (var i = 0; i < 3; i++) {            
+      for (var j = 0; j < 4; j++) {
+        if (M[i][j] < 0) {
+            M[i][j] = 0;
+        }
+        document.write(M[i][j] + " ");
+      }
+    document.write("<br>"); 
+    }    
+</script>

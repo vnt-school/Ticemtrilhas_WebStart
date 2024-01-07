@@ -1,0 +1,45 @@
+<meta charset="UTF-8">	
+<script>
+	alert("Criando Matrizes! ");
+
+    var matriza = [[1, 2], [4, 5]];
+    var matrizb = [[7, 8], [10, 11]];    
+    var matrizsoma = [[0, 0], [0, 0]];
+    var matrizmulti = [[0, 0], [0, 0]];	
+
+    //soma
+        for (var i = 0; i < matriza.length; i++) { //percorre linha da matriza
+            for (var j = 0; j < matriza.length; j++) { //percorre coluna da matriz a
+                matrizsoma[i][j] = matriza[i][j] + matrizb[i][j];
+            }
+        }
+
+        //multi
+        for (var i = 0; i < matriza.length; i++){//percorre linha da matriza
+          for (var j = 0; j < matrizb[i].length; j++){//percorre coluna da da matriza
+            for (var k = 0; k < 2; k++) {                    
+                matrizmulti[i][j] += matriza[i][k] * matrizb[k][j];
+            }
+        }
+    }	
+
+        //imprimir soma
+    document.write("Matriz Soma:");
+        for (var i = 0; i < matrizsoma.length; i++) { //percorre linha
+            document.write("<br>");
+            for (var j = 0; j < matrizsoma.length; j++) { //percorre coluna
+                document.write(matrizsoma[i][j] + "\t");
+            }
+        }
+
+        document.write("<br><br>");
+        
+        //imprimir multiplicação
+        document.write("Matriz Multiplicação:");
+            for (var i = 0; i < matrizmulti.length; i++) { //percorre linha
+                document.write("<br>");
+            for (var j = 0; j < matrizmulti.length; j++) { //percorre coluna
+                document.write(matrizmulti[i][j] + "\t");
+            }
+        }
+    </script>

@@ -1,0 +1,16 @@
+<meta charset="UTF-8">	
+<script>
+	alert("Somando variável com vetores! ");		
+
+	var vetor = new Array(4); // Vetor criado.        
+    var num = 10; // inicia variavel num com 10.  
+
+        for (var i = 0; i < vetor.length; i++) {        	
+            vetor[i] = +prompt("Digite o elemento " + i + " :"); // inicializa o vetor
+            num = num + vetor[i]; // soma o valor num com o vetor. 
+            document.write("Elemento " + i + ": " + num);  
+            document.write("<br>");          
+        } 
+</script>
+
+

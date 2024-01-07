@@ -1,0 +1,22 @@
+<meta charset="UTF-8">	
+<script>
+	alert("Criando Matrizes! ");		
+
+	var M = new Array(3);  
+
+    for (var lin=0; lin<3; lin++) {
+        M[lin] = [];
+        for (var col=0; col<3; col++) {                
+            M[lin][col] = +prompt("Digite o valor M["+ lin +"]" + "M[" + col + "]: ");   
+        }               
+    } 
+    
+    for(var lin=0 ; lin<3 ; lin++){
+       for(var col=0; col<3 ; col++){
+          document.write(M[lin][col] + "  ");
+      }
+      document.write("<br>");      
+  }  
+</script>
+
+

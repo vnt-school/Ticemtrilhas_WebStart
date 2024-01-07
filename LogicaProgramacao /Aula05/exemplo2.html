@@ -1,0 +1,28 @@
+<meta charset="UTF-8">	
+<script>
+	alert("Criando Vetores! ");
+
+    var vetorNum = new Array(5);
+    vetorNum[0] = 1;        
+    vetorNum[1] = 4;
+    vetorNum[2] = 7;
+    vetorNum[3] = 9;
+    vetorNum[4] = 2;  
+
+    for (var c=0; c<5; c++) {
+     document.write("Na posicao "+ c + ", temos o valor: " + vetorNum[c]);
+     document.write("<br>");       
+ }   
+
+document.write("<br>*********************************<br>");  
+
+ var outroVetorNum = [1, 4, 7, 9, 2];
+ for (var i=0; i<5; i++) {
+   document.write("Na posicao "+ i + ", temos o valor: " + outroVetorNum[i]);
+   document.write("<br>");            
+} 
+
+document.write("<br>********Tamanho do Vetor*********<br>");
+document.write("O vetorNum tem tamanho: " + vetorNum.length + "<br>"); 
+document.write("O outroVetorNum tem tamanho: " + outroVetorNum.length + "<br>");    
+</script>

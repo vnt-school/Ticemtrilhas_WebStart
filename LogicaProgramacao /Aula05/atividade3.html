@@ -1,0 +1,38 @@
+<meta charset="UTF-8">	
+<script>
+	alert("  MATRIZ  ");
+
+    var M = new Array(3);         
+    var somaTotal = 0;
+    var somaLinha3 = 0;
+    var somaColuna2 = 0;
+    var somaDiag = 0;
+
+    for (var i = 0; i < 3; i++) {
+        M[i] = [];
+        for (var j = 0; j < 3; j++) {            
+            M[i][j] = +prompt("Digite o valor M["+ i +"]" + "M[" + j + "]: ");
+            somaTotal = M[i][j] + somaTotal;
+            if (i == 2) {
+                somaLinha3 = M[i][j] + somaLinha3;
+            }
+            if (j == 1) {
+                somaColuna2 = M[i][j] + somaColuna2;
+            }
+            if (i == j) {
+                somaDiag = M[i][j] + somaDiag;
+            }
+        }
+    }
+    
+    for(var i=0 ; i<3 ; i++){
+       for(var j=0; j<3 ; j++){
+          document.write(M[i][j] + "  ");
+      }
+      document.write("<br>");      
+  } 
+    document.write("A soma total é: " + somaTotal + "<br>");
+    document.write("A soma da linha 3 é: " + somaLinha3 + "<br>");
+    document.write("A soma da coluna 2 é: " + somaColuna2 + "<br>");
+    document.write("A soma da diagonal Principal é: " + somaDiag + "<br>"); 
+</script>

@@ -1,0 +1,47 @@
+<meta charset="UTF-8">	
+<script>
+	alert("Funções de Manipulação de Arrays! ");
+
+	document.write("concat <br>");
+	var vetor1 = new Array(1, 2, 3);
+	var vetor2 = new Array(4, 5, 6);
+	var vetor3 = new Array(7, 8, 9);
+	var result = vetor1.concat(vetor2, vetor3);
+	document.write(result);
+	document.write("<br><br>");
+
+	document.write("indexOf <br>");    
+	var vetor4 = new Array(1, 2, 3, 4, 5);
+	var indice = vetor4.indexOf(3);
+	document.write(indice);
+	document.write("<br><br>");
+
+	document.write("join <br>"); 
+	var vetor5 = new Array(1, 2, 3, 4, 5);
+	var elementos = vetor5.join("-");
+	document.write(elementos);
+	document.write("<br><br>");
+
+	document.write("push <br>"); 
+	var vetor6 = new Array(1, 2, 3, 2, 7);
+	vetor6.push(9, 5);
+	document.write(vetor6);
+	document.write("<br><br>");
+
+	document.write("reverse <br>"); 
+	var vetor7 = new Array(1, 2, 3, 4, 5);
+	vetor7.reverse();
+	document.write(vetor7);
+	document.write("<br><br>");
+
+	document.write("sort <br>"); 
+	var vetor8 = new Array(3, 2, 1, 5, 4);
+	vetor8.sort();
+	document.write(vetor8);
+	document.write("<br><br>");
+</script>
+
+
+
+
+

@@ -1,0 +1,33 @@
+<meta charset="UTF-8">	
+<script>
+	alert("Média de alunos! "); 
+
+   var nome = new Array(5);  
+   var nota1 = new Array(5);
+   var nota2 = new Array(5);
+   var media = new Array(5);
+   var SMed = 0;  
+   
+   for (var i = 0; i < 5; i++) {
+            alert("----- DADOS DO ALUNO -----");
+            nome[i] = prompt("Nome: ");            
+            nota1[i] = +prompt("Nota1: ");
+            nota2[i] = +prompt("Nota2: ");           
+            media[i] = (nota1[i] + nota2[i]) / 2;
+            document.write(nome[i] + " Media: " + media[i] + "<br>");
+            SMed = SMed + media[i];
+        }
+        var MTurma = SMed / 5;
+        document.write("--------------------------------- <br>");
+        document.write("A media da turma é: " + MTurma + "<br>");
+        document.write("--------------------------------- <br>");
+        document.write("Alunos que ficaram acima da media: <br>");
+        document.write("--------------------------------- <br>");
+
+        
+        for (var i = 0; i < 5; i++) {
+            if (media[i] > MTurma) {
+                document.write(nome[i] + " - " + media[i] + "<br>");
+            }
+         }             
+</script>

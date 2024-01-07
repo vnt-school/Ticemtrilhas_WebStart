@@ -1,0 +1,17 @@
+<meta charset="UTF-8">	
+<script>
+	alert("Criando Vetores! ");
+
+	var f = new Array(10);	
+	
+	f[0] = 0;
+	f[1] = 1;
+
+	for (var i = 2; i < 10; i++) {
+		f[i] = f[i - 1] + f[i - 2];
+		document.write("Na posicao "+ i + ", temos o valor: " + f[i]);
+		document.write("<br>");
+	} 
+</script>
+
+

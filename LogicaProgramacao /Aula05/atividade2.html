@@ -1,0 +1,21 @@
+<meta charset="UTF-8">	
+<script>
+	alert("  COPA DE FUTEBOL  ");
+
+    var time = new Array(10);  
+
+    for (var c = 0; c < 10; c++) {            
+        time[c] = prompt("Nome do " + c + "o. time: ");
+    }
+    document.write("------------------- <br>");
+    document.write("  COPA DE FUTEBOL   <br>");
+    document.write("TABELA DAS PARTIDAS <br>");
+    document.write("------------------- <br>");
+    for (var i = 0; i < 10; i++){
+        for (var j=0; j < 10; j++){
+         if (i != j) {
+            document.write(time[i] + "[ ] x [ ] " + time[j] + "<br>");                 
+        }           
+    }
+}             
+</script>
