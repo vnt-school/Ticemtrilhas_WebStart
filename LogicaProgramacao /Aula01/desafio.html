@@ -1,0 +1,18 @@
+<meta charset="UTF-8">	
+
+<script>
+	alert("Analisador de Triângulo! ")
+	
+	var l1 = +prompt("Digite o lado 1: ");	
+	var l2 = +prompt("Digite o lado 2: ");
+	var l3 = +prompt("Digite o lado 3: ");	
+
+	var triangulo = (l1+l2)>l3 && (l2+l3)>l1 && (l1+l3)>l2;
+	document.write("Pode formar um triângulo: " + triangulo +"<br>");
+	var teq = (l1==l2) && (l2==l3);
+	document.write("É um triângulo equilátero? " + teq +"<br>");
+	var tes = (l1!=l2) && (l2!=l3) && (l1!=l3);
+	document.write("É um triangulo escaleno? " + tes +"<br>");
+	var tis = ((l1==l2)&&(l1!=l3))||((l1==l3)&&(l1!=l2))||((l2==l3)&&(l1!=l3));
+	document.write("É um triângulo isóceles? " + tis);		
+</script>
