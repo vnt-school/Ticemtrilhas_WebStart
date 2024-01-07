@@ -1,0 +1,21 @@
+<meta charset="UTF-8">	
+<script>
+	alert("Insertion Sorte: Selecionando e Ordenando!! "); 
+
+	var v = new Array(10);	
+	for (var i=1; i<11; i++) {
+		v[i] = +prompt("Digite o" + i + "o número: ");
+	} 
+	for (var i=1; i<10; i++) {		
+		for (var j=i+1; j<11; j++) {
+			if (v[i] > v[j]) {
+				var aux = v[i];
+				v[i] = v[j];
+				v[j] = aux;
+			}
+		}				
+	}
+	for (var c = 1; c < 11; c++) {
+		document.write(v[c] + "   ");
+	}
+</script>

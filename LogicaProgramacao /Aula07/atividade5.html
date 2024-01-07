@@ -1,0 +1,29 @@
+<meta charset="UTF-8">	
+<script>
+	alert("Insertion Sorte: Selecionando e Ordenando!! "); 
+
+	var v = new Array(7);
+	function getRndInteger(min, max) {
+		return Math.floor(Math.random() * (max - min) ) + min;
+	}
+	for (var i = 1; i < 8; i++) {
+		v[i] = getRndInteger(-200, 200);		
+		document.write(v[i] + "<br>");
+	}
+	for (var i = 1; i < 8; i++) {		
+		for (var j = i+1; j < 8; j++) {
+			if (v[i] > v[j]) {
+				var aux = v[i];
+				v[i] = v[j];
+				v[j] = aux;
+			}
+		}				
+	}
+	for (var i = 1; i < 8; i++) {
+		document.write(v[i] + "   ");
+	}
+</script>
+
+
+
+

@@ -1,0 +1,30 @@
+<meta charset="UTF-8">	
+<script>
+	alert("Selection Sorte: Selecionando e Ordenando!! "); 
+
+	var v = new Array(5);	
+
+	for (var i = 1; i < 6; i++) {
+		v[i] = +prompt("Digite o" + i + "o número: ");
+	} 
+                                          
+	for (var i = 1; i < 5; i++) {               
+		var menor = i;                                         
+		for (var j = i+1; j < 6; j++) {     
+			if (v[j] < v[menor]) {          
+				menor = j;                  
+			}
+		}
+		if (menor != i) {
+			var aux = v[i];             
+			v[i] = v[menor];           
+			v[menor] = aux;         
+		}		
+	}
+
+	for (var i = 1; i < 6; i++) {
+		document.write(v[i] + "   ");
+	}
+</script>
+
+

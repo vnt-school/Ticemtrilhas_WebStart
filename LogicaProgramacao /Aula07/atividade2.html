@@ -1,0 +1,42 @@
+<meta charset="UTF-8">	
+<script>
+	alert("Insertion Sorte: Selecionando e Ordenando!! "); 
+
+	var numeros = new Array(8);	
+
+	document.write("=====ORDEM ORIGINAL======= <br>");
+	for (var c=1; c<9; c++) {
+		numeros[c] = +prompt("Digite o" + c + "o número: ");
+		document.write(numeros[c] + "   ");
+	} 
+
+	document.write("<br>");
+	document.write("=====ORDEM CRESCENTE======= <br>");
+	for (var c=1; c<8; c++) {		
+		for (var k=c+1; k<9; k++) {
+			if (numeros[c] > numeros[k]) {
+				var aux = numeros[c];
+				numeros[c] = numeros[k];
+				numeros[k] = aux;
+			}
+		}				
+	}
+	for (var c = 1; c < 9; c++) {
+		document.write(numeros[c] + "   ");
+	}
+	
+	document.write("<br>");
+	document.write("=====ORDEM DECRESCENTE=======<br>");
+	for (var c=1; c<8; c++) {		
+		for (var k=c+1; k<9; k++) {
+			if (numeros[c] < numeros[k]) {
+				var aux = numeros[c];
+				numeros[c] = numeros[k];
+				numeros[k] = aux;
+			}
+		}				
+	}
+	for (var c = 1; c < 9; c++) {
+		document.write(numeros[c] + "   ");
+	}
+</script>
