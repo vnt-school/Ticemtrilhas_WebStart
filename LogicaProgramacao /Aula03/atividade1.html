@@ -1,0 +1,18 @@
+<meta charset="UTF-8">	
+<script>
+	alert("Análise de números Primos!! "); 
+	var numero;
+	var i = 2;
+	var contador = 0;
+	numero = +prompt("Digite o numero: ");       
+        while (i < numero) {           
+            if (numero % i == 0)
+            	contador++;                            
+                i++;                         	          
+        }
+        if (contador > 0 || numero == 1) {
+            document.write("Não é primo " + numero);
+        } else {
+            document.write("É primo " + numero);
+        }	
+</script>

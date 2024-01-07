@@ -1,0 +1,20 @@
+<meta charset="UTF-8">	
+<script>
+	alert("Análise do Sistema Cartesiano!! ");     
+    var x = +prompt("Entre com a coordenada x: ");
+    var y = +prompt("Entre com a coordenada y: ");
+    while (x != 0 && y != 0) {
+        if (x > 0 && y > 0) {
+            alert("primeiro quadrante");
+        } else if (x < 0 && y > 0) {
+            alert("segundo quadrante");
+        } else if (x < 0 && y < 0) {
+            alert("terceiro quadrante");
+        } else {
+            alert("quarto quadrante");
+        }              
+        x = +prompt("Entre com a coordenada x: ");
+        y = +prompt("Entre com a coordenada y: ");
+    }
+    document.write("Algoritmo Interrompido!!");
+</script>

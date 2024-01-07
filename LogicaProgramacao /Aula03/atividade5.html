@@ -1,0 +1,18 @@
+<meta charset="UTF-8">	
+<script>
+	alert("Análise de Salário!! "); 
+	var ano_atual, salario, novo_salario, percentual;        
+	ano_atual = +prompt("digite o ano atual: ");        
+	salario = +prompt("digite o valor do salario inicial: ");
+	percentual = (1.5 / 100);
+	novo_salario = salario + percentual*salario;
+	document.write("Salario com primeiro aumento R$" + novo_salario);
+	document.write("<br>");
+
+	for (i = 2020; i <= ano_atual; i++) {
+		percentual = 2*percentual;
+		novo_salario = novo_salario + percentual*novo_salario;
+		document.write("Ano " + i + ", novo salario R$" + novo_salario);
+		document.write("<br>");
+	}	
+</script>

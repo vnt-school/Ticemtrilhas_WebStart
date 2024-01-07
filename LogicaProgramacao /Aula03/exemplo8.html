@@ -1,0 +1,19 @@
+<meta charset="UTF-8">	
+<script>
+	alert("Contador de números! ");	
+	var contador = 1;
+	var negativo = 0;
+	var numero = +prompt("Quantos números deseja digitar? "); 
+
+	do{		
+		var valor = +prompt(" Digite o " + contador + ".o valor: <br>");		
+		if (valor < 0) {
+			negativo = negativo + 1;			
+		}	
+		contador = contador + 1;	
+	}while(contador <= numero);	
+
+	document.write("A quantidade de números negativos são: " + negativo);
+</script>
+
+
