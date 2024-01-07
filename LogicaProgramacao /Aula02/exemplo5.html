@@ -1,0 +1,23 @@
+<meta charset="UTF-8">	
+
+<script>
+	alert("Analisador de Viagem! ")	
+	
+	var saldo = +prompt("Digite o saldo atual: ");		
+
+	if (saldo >= 10000) {		
+		document.write("Você possui em saldo R$" + saldo + "<br>");
+		document.write("Parabéns!! Sua viagem para Europa chegou.");
+	} else{
+		if (saldo >= 3000 && saldo < 10000) {
+			document.write("Você possui em saldo R$" + saldo + "<br>");
+			document.write("Faça suas malas!! Escolha um lugar no Brasil.");
+		} else {
+			document.write("Você possui em saldo R$" + saldo + "<br>");
+			document.write("Fique em casa!! Aproveite para ler e descansar.");
+		}		
+	}
+</script>
+
+
+

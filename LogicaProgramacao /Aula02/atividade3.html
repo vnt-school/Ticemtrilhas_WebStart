@@ -1,0 +1,24 @@
+<meta charset="UTF-8">	
+
+	<script>
+		alert("Analisador de Aprovaçao! ")	
+		
+		var nome = prompt("Digite o nome do aluno: ");
+		var nota1 = +prompt("Digite a nota 1: ");
+		var nota2 = +prompt("Digite a nota 2: ");
+		var nota3 = +prompt("Digite a nota 3: ");
+
+		var media = (nota1 + nota2 + nota3)/3;
+
+		document.write("A média de " + nome + " é " + media + "<br>");	
+
+		if (media >= 7) {				
+				document.write("Parabéns!! Você está APROVADO!! <br>");
+		    }else{
+		    	if (media < 5) {
+		    		document.write("Sorry!! Você está REPROVADO!! <br>");
+		    	} else {
+		    		document.write("Fique atento!! Você está de RECUPERAÇÃO!! <br>");
+		    	}		    	
+		    }			   
+	</script>

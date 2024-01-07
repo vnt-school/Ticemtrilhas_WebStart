@@ -1,0 +1,66 @@
+<meta charset="UTF-8">	
+
+<script>
+	alert("Comparação de Números! ");	
+	alert("Digite três valores.");
+
+	var menor;
+	var medio;
+	var maior;
+	var n1 = +prompt("Digite o primeiro número: ");
+	var n2 = +prompt("Digite o segundo número: ");
+	var n3 = +prompt("Digite o terceiro número: ");
+
+	alert("DIGITE i = [1] SE QUISER VER ELES EM ORDEM CRESCENTE! \n DIGITE i = [2] SE QUISER VER ELES EM ORDEM DECRESCENTE \n DIGITE i = [3] SE QUISER QUE O MAIOR FIQUE ENTRE OS DOIS");
+
+	var i = +prompt("Digite o valor de i: ");
+
+	if ((n1>n2) && (n1>n3)) {
+		if (n2>n3) {
+			maior = n1;
+			medio = n2;
+			menor = n3;
+		} else {
+			maior = n1
+			medio = n3
+			menor = n2
+		}
+	}else{
+		if ((n2>n1) && (n2>n3)) {
+			if (n1>n3) {
+				maior = n2
+				medio = n1
+				menor = n3
+			} else {
+				maior = n2
+				medio = n3
+				menor = n1
+			}
+		} else{
+			if ((n3>n1) && (n3>n2)) {
+				if (n1>n2) {
+					maior = n3
+					medio = n1
+					menor = n2
+				} else {
+					maior = n3
+					medio = n2
+					menor = n1
+				}
+			}
+		}
+	}  
+
+	if (i == 1) {
+		document.write("OS NUMEROS EM ORDEM CRESCENTE SÃO:" + menor + "," + medio + "," + maior );
+	}
+	if (i == 2) {
+		document.write("OS NUMEROS EM ORDEM DECRESCENTE SÃO:" + maior + "," + medio + "," + menor );
+	}
+	if (i == 3) {
+		document.write("OS NUMEROS EM QUE O MAIOR FIQUE ENTRE OS DOIS SÃO:" + menor + "," + maior + "," + medio );
+	}
+	if (i >= 4) {
+		document.write("O NUMERO INDICADO NÃO EXECUTA A TAREFA!!");
+	}
+</script>

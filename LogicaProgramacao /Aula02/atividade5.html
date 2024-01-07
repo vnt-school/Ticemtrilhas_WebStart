@@ -1,0 +1,41 @@
+<meta charset="UTF-8">	
+
+<script>
+	alert("Analisador de IMC! ");	
+
+	var massa = +prompt("Digite a massa: ");
+	var altura = +prompt("Digite a altura: ");
+
+	imc = massa/(altura*altura);
+
+	document.write("O seu imc é: " + imc + "<br>");
+
+	if (imc<16) {
+		document.write("Magreza Grave!");}
+		else{ 
+			if (imc>=16 && imc<17) {
+				document.write("Magreza Moderada!");}
+			else{
+				if ((imc>=17) && (imc<18.5)) {
+					document.write("Magreza Leve!");}
+				else{
+					if ((imc>=18.5) && (imc<25)) {
+						document.write("Saudável!");}
+					else{
+						if ((imc>=25) && (imc<30)) {
+							document.write("Sobrepeso!");}
+						else{
+							if ((imc>=30) && (imc<35)) {
+								document.write("Obesidade grau I!")}
+							else{
+								if ((imc>=35) && (imc<40)) {
+									document.write("Obesidade grau II!")} 
+								else {
+									document.write("Obesidade grau II!")}
+						}
+					}
+				}
+			}
+		}	
+	}
+</script>

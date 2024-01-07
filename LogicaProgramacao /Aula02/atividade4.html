@@ -1,0 +1,30 @@
+<meta charset="UTF-8">	
+
+<script>		
+	alert("------------------------------- \n   PROGRAMA SOLIDÁRIO   \n ------------------------------- \n [1] para doar R$10 \n [2] para doar R$25 \n [3] para doar R$50 \n [4] para doar outros valores \n [5] para cancelar     " );	
+	
+	var valor;
+	var numero = +prompt("Digite o número para doar");		
+
+	switch (numero) {
+	case 1:
+		valor = 10;
+		break;
+	case 2:
+		valor = 25;
+		break;
+	case 3:
+		valor = 50;
+		break;
+	case 4:		
+		valor = +prompt("Digite o valor da doação R$");
+		break;
+	default:
+		valor = 0;		
+		break;
+	}
+	document.write("--------------------------" + "<br>");
+	document.write("Sua doação foi de R$" + valor + "<br>");	
+	document.write("MUITO OBRIGADO!!" + "<BR>");
+	document.write("--------------------------" + "<br>");	
+</script>
