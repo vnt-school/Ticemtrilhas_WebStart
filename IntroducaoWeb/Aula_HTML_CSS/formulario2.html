@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <h1>Formulário</h1>
+
+    <form>
+      <label for="name">Nome</label>
+      <input
+        name="name"
+        id="name"
+        placeholder="Jose Fonseca"
+        required
+        minlength="2"
+        maxlength="100"        
+      />      
+      <br />
+      <label for="email">E-mail</label>
+      <input type="email" name="email" id="email" />
+      <br />
+      <label for="birthdate">Data de Nascimento</label>
+      <input type="date" name="birthdate" id="birthdate" />
+      <br />
+      <label for="zipcode">CEP</label>
+      <input
+        type="text"
+        name="zipcode"
+        id="zipcode"
+        pattern="^[0-9]{5}-[0-9]{3}$"
+      />
+      <br />
+      <label for="grade">Nota</label>
+      <input type="number" name="grade" id="grade" min="0" max="10" step=".5" />
+
+      <br />
+      <label for="comments">Comentários</label>
+      <br />
+      <textarea name="comments" id="comments" cols="30" rows="5"></textarea>
+      <br />
+
+      <label for="favorite_stack">Tecnologia Favorita</label>
+      <select name="favorite_stack" id="favorite_stack" required>
+        <option value="" selected disabled>Selecione</option>
+        <option value="frontend">Frontend</option>
+        <option value="backend">Backend</option>
+      </select>
+
+      <fieldset>
+        <legend>Você está gostando do curso?</legend>
+        <input type="radio" id="yes" value="yes" name="liked" />
+        <label for="yes">Sim</label>
+        <input type="radio" id="no" value="no" name="liked" />
+        <label for="no">Não</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Quais módulos você recomenda?</legend>
+        <input type="checkbox" name="module" value="html" id="html" />
+        <label for="html">HTML</label>
+        <input type="checkbox" name="module" value="css" id="css" />
+        <label for="css">CSS</label>
+        <input type="checkbox" name="module" value="js" id="js" checked />
+        <label for="js">Javascript</label>
+      </fieldset>           
+
+      <button>Enviar</button>
+    </form>
+  </body>
+</html>

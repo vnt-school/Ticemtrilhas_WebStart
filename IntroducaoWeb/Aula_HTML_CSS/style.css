@@ -1,0 +1,29 @@
+h1 {
+    color: blue;
+    font-style: italic;
+}
+
+h3 {
+    color: blueviolet;
+    font-style: italic;
+}
+
+button {
+    background-color: yellow;
+}
+
+button[disabled] {
+    background-color: lightyellow;
+}
+
+.azul {
+    color: forestgreen;
+}
+
+button:hover {
+    background-color: #888;
+}
+
+button[disabled]:hover {
+    background-color: #888;
+} 

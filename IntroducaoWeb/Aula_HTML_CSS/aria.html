@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Acessibilidade</title>
+  </head>
+  <body>
+    <h1>Acessibilidade?</h1>    
+    <form id="search" role="search">
+      <label for="search-input">Procure este site:</label>
+      <input type="search" id="search-input" name="search" spellcheck="false">
+      <input value="Submit" type="submit">
+    </form>
+    <br>
+
+    <form action="/">
+      <h3 id="name">Nome:</h3>
+      <input type="text" aria-labelledby="name" />
+      <br><br>      
+      
+      <p id="code-description">Insira todos os digitos do seu código de rastreio:</p>
+      <input type="text" aria-describedby="code-description" />         
+    </form>    
+  </body>
+</html>
+

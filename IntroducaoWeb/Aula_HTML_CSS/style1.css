@@ -1,0 +1,134 @@
+.texto {
+    color: #F00;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+div p.descricao {
+    color: #F00;
+}
+
+#sidebar p {
+    color: #F90;
+}
+
+
+
+/* Pra Finalizar */
+
+body {
+    font-size: 10px;
+    }
+#conteudo p.primeiro {
+    color: green; 
+    } 
+#conteudo p {
+    color: blue; 
+    font-size: 18px;
+    } 
+p {
+    color: red; 
+    font-size: 26px;
+    } 
+
+/* Trabalhando com Box Model */
+div {
+    width: 200px;
+    height: 100px;
+    padding: 20px;       
+    border: 10px solid black;           
+    margin: 10px;
+    
+} 
+
+
+
+/* Tipografia */
+
+h1 {
+font-family: 'Courier New';
+font-size: 36px;
+}
+
+h2 {
+    font-family: 'Courier New';
+    font-size: 24px;
+}
+
+.texto3 {
+    font-family: 'Courier New';
+    font-size: 18px;  
+    color: blueviolet;  
+}
+
+
+/* Margem, Borda e Preenchimento */
+ .texto3 {  
+    width: 300px;
+    height: 200px; 
+    margin: 20px;   
+    margin-top: 30px;  
+    padding: 20px;
+    padding-left: 40px;   
+    border-style: dotted; 
+    border: 5px dashed black;    
+} 
+
+body{
+    display: flex;
+}
+
+
+
+/* p {
+    color: #B71; 
+    color: #B71A; 
+    color: #540; 
+    color: #B71540;    
+    color   
+    }
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* button {
+    background-color: yellow;
+}
+
+button[disabled] {
+    background-color: lightyellow;
+}
+
+.azul {
+    color: blue;
+}
+
+button:hover{
+    background-color: #888;
+}
+
+button[disabled]:hover{
+    background-color: #888;
+} */

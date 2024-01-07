@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css" /> 
+    <title>Hierarquia: Efeito Cascata!</title>    
+</head>
+<body>    
+    <div class="texto">
+        <p>
+            Texto exemplo <strong>com um destaque</strong>.
+        </p>
+    </div>
+
+
+   <div id="sidebar">
+        <p class="descricao">
+            Texto exemplo para falar de especificidade!
+        </p>
+    </div> 
+
+    <!-- Pra finalizar hirarquia -->
+     <div id="conteudo">
+        <p class="primeiro">
+       Cor1
+        </p>
+    
+        <p> 
+        Cor2
+        </p>    
+    </div> 
+
+    <p> 
+    Cor3
+    </p>
+
+
+    <!-- Box Model -->
+    <div>
+        <p>
+            Tenho mais texto do que espaço para comportar, então o excedente vai ficar pra fora.
+        </p>
+    </div>
+
+</body>
+</html>
