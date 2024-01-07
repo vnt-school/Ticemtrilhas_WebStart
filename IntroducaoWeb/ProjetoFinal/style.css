@@ -1,0 +1,72 @@
+/* Para centralizar o container é definido a largura dele 
+   e definido as margens laterais como automáticas 
+   top e bottom -> 0, left e right -> auto / se adapta a width */
+.container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+/* Define o form como um container flexível. 
+   Isso facilita a manipulação de seus elementos filhos.
+   Coloca um espaçamento entre os itens (botão e input) */
+#form-add-todo {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* A propriedade flex define como um ítem será posicionado
+   no espaço disponível dentro de seu container. 
+   O Flex 1 -> ocupa todo o espaço disponível.
+   Além disso, o input terá borda, altura e preebchimento como definido d*/
+#form-add-todo input {
+  flex: 1;
+  border: 1px solid black;
+  height: 2rem;
+  padding: 0 0.5rem;
+}
+
+/* Aqui o botão do formulário ira receber cor e vai aumentar de largura.
+   E é removido a borda do botão */
+#form-add-todo button {
+  background: #F4B200;
+  border: none;
+  width: 3rem;
+}
+
+/* Aqui começamos a estilizar a lista. 
+  list-styel -> remove os marcadores da lista(bullet points).
+  word-wrap: break-word -> Palavras podem ser quebradas. 
+             Portanto, altera o texto para quebrar as palavras caso atinja a borda do container
+  E por fim, remove o espaçamento interno e adiciona uma borda cinza claro*/
+#todo-list {
+  list-style: none;
+  word-wrap: break-word;
+  padding: 0;
+  border: 1px solid #EBEBEC;
+}
+
+/* Aqui é adicionado o espaçamento interno dos itens */
+#todo-list li {
+  padding: 0.5rem 1rem;
+}
+
+/* :nth-child(odd) -->Essa psedo-clase representa elementos na posição ímpar: 1, 3, 5
+  Portanto, aqui pinta as linhas ímpares de cinza */
+#todo-list li:nth-child(odd) {
+  background-color: #F6F6F6;
+}
+
+
+
+/* É uma pseudo-classe utilizada para ocultar elementos vazios, 
+   Portanto, quando a minha lista estiver vazia, vou tirar a borda dela */
+/* #todo-list:empty {
+  border: none;
+} */
+
+/* Após a lista estiver vazia e sem a borda, será acrescentado o conteúdo mostrado. */
+/* #todo-list:empty::after {
+  content: 'Nada para ser feito hoje...';
+} */
+
+
