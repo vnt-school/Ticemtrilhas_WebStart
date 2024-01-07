@@ -1,0 +1,22 @@
+<meta charset="UTF-8">	
+<script>
+	alert("Procurando o menor valor! ");
+
+	var valorProduto = new Array(5);
+	var menor = 1;	
+	var maior = 1;
+
+	for (var i = 0; i < valorProduto.length; i++) {
+
+		valorProduto[i] = +prompt("Digite o " + i + "º valor:"); 
+		
+		if (valorProduto[i] > valorProduto[maior]) {
+			maior = i;
+		}
+		if (valorProduto[i] < valorProduto[menor]) {
+			menor = i;
+		}
+	} 
+	document.write("O menor valor é: " + valorProduto[menor] + "<br>");	
+	document.write("O maior valor é: " + valorProduto[maior] + "<br>");
+</script>

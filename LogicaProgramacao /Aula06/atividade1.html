@@ -1,0 +1,24 @@
+<meta charset="UTF-8">	
+<script>
+	alert("Professor que recebe MAIOR salário? ");
+
+	var prof = new Array(4);
+	var hora_aula = new Array(4);
+	var valor = new Array(4);
+	var maior = 0;	
+	var salario = 0;
+	for (var i = 0; i < prof.length; i++) {
+		prof[i] = prompt("Digite o nome do professor: "); 
+		hora_aula[i] = +prompt("Digite a quantidade de horas: "); 
+		valor[i] = +prompt("Digite o valor da hora trabalhada: "); 				
+	} 
+
+	for (var i = 0; i < prof.length; i++) {
+		salario = hora_aula[i]*valor[i];
+		document.write("O salário do professor " + prof[i] + " é: " + salario + "<br>");
+		if (salario > maior) {
+			maior = salario;
+		}
+	}
+	document.write("O maior salario é: " + maior + "<br>");	
+</script>

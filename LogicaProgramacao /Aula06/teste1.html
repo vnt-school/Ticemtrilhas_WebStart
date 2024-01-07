@@ -1,0 +1,12 @@
+<meta charset="UTF-8">
+<script>
+    var carro = new Array(4);
+	var x = 1;	
+	for (var i = 0; i < carro.length; i++) {
+		carro[i] = +prompt("Digite o " + (i+1) + "º valor:"); 
+		if (carro[i] > carro[x]) {
+		x = i;
+	       }	
+       } 
+     document.write("O valor é: " + carro[x]);
+</script>

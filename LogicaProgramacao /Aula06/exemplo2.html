@@ -1,0 +1,19 @@
+<meta charset="UTF-8">	
+<script>
+	alert("Procurando o menor valor! ");
+
+	var i = 1;
+	while(i<=5){		
+		var atual = +prompt("Digite o" + i + "º valor:");
+		if (i==1){
+			var maisBarato = atual;
+		} else {
+			if (atual < maisBarato) {
+				maisBarato = atual;
+			}
+		}
+		i = i + 1;
+	}
+	document.write("O menor valor é: " + maisBarato);
+</script>
+
