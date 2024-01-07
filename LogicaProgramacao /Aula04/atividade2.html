@@ -1,0 +1,17 @@
+<meta charset="UTF-8">	
+<script>
+	alert("Análise de fatorial! ");  	
+
+  function fatorial(num) {
+     if (num < 0) 
+        return -1;
+     else if (num == 0) 
+      return 1;
+   else {
+      return (num * fatorial(num - 1));
+   }
+} 
+
+var num = +prompt("Digite o número para obter o fatorial: ");
+document.write("O fatorial é " + fatorial(num))
+</script>

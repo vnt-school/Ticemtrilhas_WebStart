@@ -1,0 +1,36 @@
+<meta charset="UTF-8">	
+<script>
+	alert("Operação com números! ");
+
+   function saltoLinha() {
+       document.write("<br>");             
+   } 	
+
+    function somaDoisNumeros(a,b) {
+      return a + b;              
+   }
+
+   function subtraiDoisNumeros(a,b){
+      return a - b;
+   }           
+
+   function divideDoisNumeros(a,b){
+      return a/b;
+   }
+
+   function multiplicaDoisNumeros(a,b){
+      return a*b;
+   } 
+
+   var a = +prompt("Entre com o valor de a: ");
+   var b = +prompt("Enre com o valor de b: ");  
+   
+   document.write("A soma é " + somaDoisNumeros(a,b));
+   saltoLinha();    
+   document.write("A subtração é " + subtraiDoisNumeros(a,b));
+   saltoLinha();     
+   document.write("A divisão é " + divideDoisNumeros(a,b));
+   saltoLinha();
+   document.write("A multiplicação é " + multiplicaDoisNumeros(a,b));
+   saltoLinha();
+</script>

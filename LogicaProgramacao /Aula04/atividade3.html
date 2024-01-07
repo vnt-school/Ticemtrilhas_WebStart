@@ -1,0 +1,22 @@
+<meta charset="UTF-8">	
+<script>
+	alert("Análise de fibonacci! ");  
+
+   function fibonacci(n1, n2) {
+      var fib = n1 + " " + n2;
+      var n3 = 0;
+      var contador = 1;
+      while(contador<=10){
+         n3 = n1 + n2;
+         n1 = n2;
+         n2 = n3;
+         fib += " " + n3;
+         contador++;
+      }
+      document.write(fib);
+   }   
+
+   const num1 = 0;
+   const num2 = 1;
+   fibonacci(num1,num2);    
+</script>

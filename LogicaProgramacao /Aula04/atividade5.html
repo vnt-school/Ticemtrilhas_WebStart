@@ -1,0 +1,32 @@
+<meta charset="UTF-8">	
+<script>
+	alert("Organize os números em ordem decrescente! ");   
+
+   function Decrescente(num1, num2, num3){
+    var aux = num1;
+
+    if(num2 > num1){
+      aux=num2;
+      num2=num1;
+      num1=aux;
+   }
+
+   if(num3 > num1){
+      aux=num3;
+      num3=num1;
+      num1=aux;
+   }
+
+   if(num3 > num2){
+      aux=num3;
+      num3=num2;
+      num2=aux;
+   }
+   alert(num1+", "+num2+", "+num3);
+}
+
+var a = +prompt("Digite o numero 1: ");
+var b = +prompt("Digite o numero 2: ");
+var c = +prompt("Digite o numero 3: ");
+Decrescente(a, b, c);
+</script>

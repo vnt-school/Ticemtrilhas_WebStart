@@ -1,0 +1,19 @@
+<meta charset="UTF-8">	
+<script>
+	alert("Análise par ou impar! ");
+
+   function saltoLinha() {
+       document.write("<br>");             
+   } 	
+
+    function parOuImpar(n) {
+      if (n%2 == 0) {
+         document.write("O numero " + n + " é par!");
+      } else {
+         document.write("O numero " + n + " é impar!");
+      }                 
+   }
+
+   var n = +prompt("Digite o número: ");
+   parOuImpar(n);    
+</script>

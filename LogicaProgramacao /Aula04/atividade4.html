@@ -1,0 +1,19 @@
+<meta charset="UTF-8">	
+<script>
+	alert("Construa a tabuada! ");
+ 
+  function Tabuada(num1, num2) {
+     tab = i*num;
+     return tab;
+  }
+
+  var num = +prompt("Digite o número para saber a tabuada: ");
+  if (num<1 || num>10) {
+   document.write("Este número não é válido");
+} else {
+   for (var i = 1; i < 11; i++) {
+      var x = Tabuada(i, num);
+      document.write(i + " x " + num + " = " + x + "<br>");
+   }
+}
+</script>

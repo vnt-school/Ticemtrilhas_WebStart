@@ -1,0 +1,33 @@
+<meta charset="UTF-8">	
+<script>
+	alert("Cálculo da Equação de 2 grau! ");
+
+   function saltoLinha() {
+       document.write("<br>");             
+   } 	
+
+    function calculaDelta(a,b,c) {
+      return (b*b - 4*a*c);                   
+   }
+
+   var a = +prompt("Entre com o valor de a: ");
+   var b = +prompt("Enre com o valor de b: "); 
+   var c = +prompt("Enre com o valor de c: ");  
+
+   var delta = calculaDelta(a,b,c);
+   document.write("O valor de delta é " + delta);
+   saltoLinha(); 
+
+   if (delta < 0) {
+      document.write("Esta equação não possui raízes reais!!");
+   } else {
+      if (delta == 0) {
+         var raiz1 = (-b + Math.sqrt(delta) )/(2*a);
+         document.write("Esta equação possui apenas 1 raíz: " + raiz1);
+      } else {
+         var raiz1 = (-b + Math.sqrt(delta) )/(2*a);
+         var raiz2 = (-b - Math.sqrt(delta) )/(2*a);         
+         document.write("Esta equação possui duas raízes: " + raiz1 + " e " + raiz2);
+      }
+   }  
+</script>
